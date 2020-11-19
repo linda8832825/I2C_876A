@@ -8,7 +8,7 @@ void I2C_Master_Init()
   SSPCON = 0x28; //0010 1000 // 我覺得要有這個 bit6=1 SSPBUF暫存器仍保留前一個字節時，接收到一個字節。（必須在軟件中清除。） 
                  // clock閒置時為low// 啟用串列端口並將SDA和SCL引腳配置為串列端口引腳
                  // I2C Master mode, clock = FOSC/(4 * (SSPADD + 1)) 
-  SSPCON2 = 0x0F;// 0000 1111 收到SLAVE的回應 // 回應是0// 確認序列空閒//我覺得要有這個 bit3=1 為I2C啟用接收模式
+  SSPCON2 = 0x00;// 0000 1111 收到SLAVE的回應 // 回應是0// 確認序列空閒//我覺得要有這個 bit3=1 為I2C啟用接收模式
                  // 我覺得要有這個bit2=1 在SDA和SCL引腳上啟動停止條件// 我覺得要有這個 bit1=1在SDA和SCL引腳上啟動重複啟動條件 //我覺得要有這個 bit0=1在SDA和SCL引腳上啟動啟動條件。
   SSPSTAT = 0x00;
   SSPADD = ((_XTAL_FREQ/4)/I2C_BaudRate) - 1;

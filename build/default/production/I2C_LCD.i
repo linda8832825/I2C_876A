@@ -1593,7 +1593,10 @@ unsigned char RS, i2c_add, BackLight_State = 0x08;
 void I2C_Master_Init()
 {
   SSPCON = 0x28;
+
+
   SSPCON2 = 0x00;
+
   SSPSTAT = 0x00;
   SSPADD = ((16000000/4)/100000) - 1;
   TRISC3 = 1;
