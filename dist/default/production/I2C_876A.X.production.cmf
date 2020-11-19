@@ -31,11 +31,11 @@ text14 CODE 0 611 611 E 2
 idataCOMMON CODE 0 5E4 5E4 1 2
 maintext CODE 0 6BB 6BB 2F 2
 cstackCOMMON COMMON 1 70 70 A 1
-strings STRING 0 3 3 36 2
+strings STRING 0 3 3 45 2
 dataCOMMON COMMON 1 7C 7C 1 1
 bssCOMMON COMMON 1 7B 7B 1 1
 config CONFIG 4 2007 2007 1 2
-$C:\Users\linda\AppData\Local\Temp\sdas.o
+$C:\Users\linda\AppData\Local\Temp\sbdo.o
 end_init CODE 0 0 0 3 2
 config CONFIG 4 2007 2007 1 2
 # %UNUSED Section
@@ -52,13 +52,13 @@ BANK0 20-6F 1
 BANK1 A0-EF 1
 BANK2 110-16F 1
 BANK3 190-1EF 1
-CONST 39-5E3 2
+CONST 48-5E3 2
 CONST 800-1FFF 2
-ENTRY 39-5E3 2
+ENTRY 48-5E3 2
 ENTRY 800-1FFF 2
 IDLOC 2000-2003 2
 STACK 110-16F 1
-CODE 39-5E3 2
+CODE 48-5E3 2
 CODE 800-1FFF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
@@ -66,9 +66,9 @@ SFR2 100-10F 1
 SFR3 180-18F 1
 COMMON 7D-7D 1
 EEDATA 2100-21FF 2
-STRCODE 39-5E3 2
+STRCODE 48-5E3 2
 STRCODE 800-1FFF 2
-STRING 39-5E3 2
+STRING 48-5E3 2
 STRING 800-1FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
@@ -84,17 +84,17 @@ STRING 800-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\I2C_876A.X.production.o
-7F5 cinit CODE >585:C:\Users\linda\AppData\Local\Temp\sdas.s
-7F5 cinit CODE >588:C:\Users\linda\AppData\Local\Temp\sdas.s
-7F5 cinit CODE >608:C:\Users\linda\AppData\Local\Temp\sdas.s
-7FA cinit CODE >609:C:\Users\linda\AppData\Local\Temp\sdas.s
-7FB cinit CODE >613:C:\Users\linda\AppData\Local\Temp\sdas.s
-7FC cinit CODE >619:C:\Users\linda\AppData\Local\Temp\sdas.s
-7FC cinit CODE >621:C:\Users\linda\AppData\Local\Temp\sdas.s
-7FD cinit CODE >622:C:\Users\linda\AppData\Local\Temp\sdas.s
-611 text14 CODE >32:C:\Users\linda\MPLABXProjects\I2C_876A.X\main.c
-611 text14 CODE >34:C:\Users\linda\MPLABXProjects\I2C_876A.X\main.c
-61E text14 CODE >35:C:\Users\linda\MPLABXProjects\I2C_876A.X\main.c
+7F5 cinit CODE >600:C:\Users\linda\AppData\Local\Temp\sbdo.s
+7F5 cinit CODE >603:C:\Users\linda\AppData\Local\Temp\sbdo.s
+7F5 cinit CODE >623:C:\Users\linda\AppData\Local\Temp\sbdo.s
+7FA cinit CODE >624:C:\Users\linda\AppData\Local\Temp\sbdo.s
+7FB cinit CODE >628:C:\Users\linda\AppData\Local\Temp\sbdo.s
+7FC cinit CODE >634:C:\Users\linda\AppData\Local\Temp\sbdo.s
+7FC cinit CODE >636:C:\Users\linda\AppData\Local\Temp\sbdo.s
+7FD cinit CODE >637:C:\Users\linda\AppData\Local\Temp\sbdo.s
+611 text14 CODE >30:C:\Users\linda\MPLABXProjects\I2C_876A.X\main.c
+611 text14 CODE >31:C:\Users\linda\MPLABXProjects\I2C_876A.X\main.c
+61E text14 CODE >32:C:\Users\linda\MPLABXProjects\I2C_876A.X\main.c
 5F7 text13 CODE >6:C:\Users\linda\MPLABXProjects\I2C_876A.X\I2C_LCD.c
 5F7 text13 CODE >8:C:\Users\linda\MPLABXProjects\I2C_876A.X\I2C_LCD.c
 5FB text13 CODE >11:C:\Users\linda\MPLABXProjects\I2C_876A.X\I2C_LCD.c
@@ -178,25 +178,25 @@ $dist/default/production\I2C_876A.X.production.o
 697 text2 CODE >121:C:\Users\linda\MPLABXProjects\I2C_876A.X\I2C_LCD.c
 69A text2 CODE >122:C:\Users\linda\MPLABXProjects\I2C_876A.X\I2C_LCD.c
 6BA text2 CODE >123:C:\Users\linda\MPLABXProjects\I2C_876A.X\I2C_LCD.c
+720 text1 CODE >20:C:\Users\linda\MPLABXProjects\I2C_876A.X\main.c
 720 text1 CODE >21:C:\Users\linda\MPLABXProjects\I2C_876A.X\main.c
-720 text1 CODE >23:C:\Users\linda\MPLABXProjects\I2C_876A.X\main.c
-728 text1 CODE >24:C:\Users\linda\MPLABXProjects\I2C_876A.X\main.c
-72E text1 CODE >25:C:\Users\linda\MPLABXProjects\I2C_876A.X\main.c
-736 text1 CODE >26:C:\Users\linda\MPLABXProjects\I2C_876A.X\main.c
-73C text1 CODE >27:C:\Users\linda\MPLABXProjects\I2C_876A.X\main.c
-744 text1 CODE >28:C:\Users\linda\MPLABXProjects\I2C_876A.X\main.c
-74A text1 CODE >29:C:\Users\linda\MPLABXProjects\I2C_876A.X\main.c
-752 text1 CODE >30:C:\Users\linda\MPLABXProjects\I2C_876A.X\main.c
-758 text1 CODE >31:C:\Users\linda\MPLABXProjects\I2C_876A.X\main.c
+728 text1 CODE >22:C:\Users\linda\MPLABXProjects\I2C_876A.X\main.c
+72E text1 CODE >23:C:\Users\linda\MPLABXProjects\I2C_876A.X\main.c
+736 text1 CODE >24:C:\Users\linda\MPLABXProjects\I2C_876A.X\main.c
+73C text1 CODE >25:C:\Users\linda\MPLABXProjects\I2C_876A.X\main.c
+744 text1 CODE >26:C:\Users\linda\MPLABXProjects\I2C_876A.X\main.c
+74A text1 CODE >27:C:\Users\linda\MPLABXProjects\I2C_876A.X\main.c
+752 text1 CODE >28:C:\Users\linda\MPLABXProjects\I2C_876A.X\main.c
+758 text1 CODE >29:C:\Users\linda\MPLABXProjects\I2C_876A.X\main.c
+6BB maintext CODE >7:C:\Users\linda\MPLABXProjects\I2C_876A.X\main.c
 6BB maintext CODE >8:C:\Users\linda\MPLABXProjects\I2C_876A.X\main.c
-6BB maintext CODE >9:C:\Users\linda\MPLABXProjects\I2C_876A.X\main.c
-6BE maintext CODE >10:C:\Users\linda\MPLABXProjects\I2C_876A.X\main.c
-6C3 maintext CODE >11:C:\Users\linda\MPLABXProjects\I2C_876A.X\main.c
-6C9 maintext CODE >12:C:\Users\linda\MPLABXProjects\I2C_876A.X\main.c
-6CE maintext CODE >14:C:\Users\linda\MPLABXProjects\I2C_876A.X\main.c
-6D1 maintext CODE >15:C:\Users\linda\MPLABXProjects\I2C_876A.X\main.c
-6DA maintext CODE >16:C:\Users\linda\MPLABXProjects\I2C_876A.X\main.c
-6DD maintext CODE >17:C:\Users\linda\MPLABXProjects\I2C_876A.X\main.c
+6BE maintext CODE >9:C:\Users\linda\MPLABXProjects\I2C_876A.X\main.c
+6C3 maintext CODE >10:C:\Users\linda\MPLABXProjects\I2C_876A.X\main.c
+6C9 maintext CODE >11:C:\Users\linda\MPLABXProjects\I2C_876A.X\main.c
+6CE maintext CODE >13:C:\Users\linda\MPLABXProjects\I2C_876A.X\main.c
+6D1 maintext CODE >14:C:\Users\linda\MPLABXProjects\I2C_876A.X\main.c
+6DA maintext CODE >15:C:\Users\linda\MPLABXProjects\I2C_876A.X\main.c
+6DD maintext CODE >16:C:\Users\linda\MPLABXProjects\I2C_876A.X\main.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -223,10 +223,10 @@ LCD_CMD@CMD 75 0 COMMON 1 cstackCOMMON dist/default/production\I2C_876A.X.produc
 __Hstrings 0 0 ABS 0 strings -
 _RCEN 48B 0 ABS 0 - dist/default/production\I2C_876A.X.production.o
 _RSEN 489 0 ABS 0 - dist/default/production\I2C_876A.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\linda\AppData\Local\Temp\sdas.o
+___sp 0 0 STACK 2 stack C:\Users\linda\AppData\Local\Temp\sbdo.o
 _main D76 0 CODE 0 maintext dist/default/production\I2C_876A.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\I2C_876A.X.production.o
-start 0 0 CODE 0 init C:\Users\linda\AppData\Local\Temp\sdas.o
+start 0 0 CODE 0 init C:\Users\linda\AppData\Local\Temp\sbdo.o
 __size_of_main 0 0 ABS 0 - dist/default/production\I2C_876A.X.production.o
 __HbssCOMMON 0 0 ABS 0 bssCOMMON -
 __size_of_LCD_CMD 0 0 ABS 0 - dist/default/production\I2C_876A.X.production.o
@@ -237,12 +237,12 @@ __LnvCOMMON 0 0 ABS 0 nvCOMMON -
 __HdataCOMMON 0 0 ABS 0 dataCOMMON -
 __size_of_LCD_Set_Cursor 0 0 ABS 0 - dist/default/production\I2C_876A.X.production.o
 __end_of_LCD_Init FEA 0 CODE 0 text5 dist/default/production\I2C_876A.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\linda\AppData\Local\Temp\sdas.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\linda\AppData\Local\Temp\sdas.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\linda\AppData\Local\Temp\sdas.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\linda\AppData\Local\Temp\sdas.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\linda\AppData\Local\Temp\sdas.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\linda\AppData\Local\Temp\sdas.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\linda\AppData\Local\Temp\sbdo.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\linda\AppData\Local\Temp\sbdo.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\linda\AppData\Local\Temp\sbdo.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\linda\AppData\Local\Temp\sbdo.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\linda\AppData\Local\Temp\sbdo.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\linda\AppData\Local\Temp\sbdo.o
 __LbssCOMMON 0 0 ABS 0 bssCOMMON -
 __end_of_LCD_Write_4Bit CC2 0 CODE 0 text7 dist/default/production\I2C_876A.X.production.o
 __end_of_LCD_Write_Char D2C 0 CODE 0 text3 dist/default/production\I2C_876A.X.production.o
@@ -253,8 +253,8 @@ __pidataCOMMON BC8 0 CODE 0 idataCOMMON dist/default/production\I2C_876A.X.produ
 __LdataCOMMON 0 0 ABS 0 dataCOMMON -
 _i2c_add 7A 0 COMMON 1 nvCOMMON dist/default/production\I2C_876A.X.production.o
 __Lmaintext 0 0 ABS 0 maintext -
-___stackhi 0 0 ABS 0 - C:\Users\linda\AppData\Local\Temp\sdas.o
-___stacklo 0 0 ABS 0 - C:\Users\linda\AppData\Local\Temp\sdas.o
+___stackhi 0 0 ABS 0 - C:\Users\linda\AppData\Local\Temp\sbdo.o
+___stacklo 0 0 ABS 0 - C:\Users\linda\AppData\Local\Temp\sbdo.o
 __end_of_LCD_CMD CF6 0 CODE 0 text6 dist/default/production\I2C_876A.X.production.o
 __size_of_Delay 0 0 ABS 0 - dist/default/production\I2C_876A.X.production.o
 __size_of_IO_Expander_Write 0 0 ABS 0 - dist/default/production\I2C_876A.X.production.o
@@ -269,7 +269,7 @@ _SSPCON 14 0 ABS 0 - dist/default/production\I2C_876A.X.production.o
 _TRISB0 430 0 ABS 0 - dist/default/production\I2C_876A.X.production.o
 _TRISC3 43B 0 ABS 0 - dist/default/production\I2C_876A.X.production.o
 _TRISC4 43C 0 ABS 0 - dist/default/production\I2C_876A.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\linda\AppData\Local\Temp\sdas.o
+___int_sp 0 0 STACK 2 stack C:\Users\linda\AppData\Local\Temp\sbdo.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -321,7 +321,7 @@ Delay@counter 70 0 COMMON 1 cstackCOMMON dist/default/production\I2C_876A.X.prod
 __Lintentry 0 0 CODE 0 intentry -
 __stringtab 6 0 STRING 0 strings dist/default/production\I2C_876A.X.production.o
 I2C_Master_Write@data 70 0 COMMON 1 cstackCOMMON dist/default/production\I2C_876A.X.production.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\linda\AppData\Local\Temp\sdas.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\linda\AppData\Local\Temp\sbdo.o
 __size_of_LCD_Write_4Bit 0 0 ABS 0 - dist/default/production\I2C_876A.X.production.o
 __size_of_LCD_Write_Char 0 0 ABS 0 - dist/default/production\I2C_876A.X.production.o
 _LCD_Set_Cursor DD4 0 CODE 0 text4 dist/default/production\I2C_876A.X.production.o
@@ -448,7 +448,7 @@ idataCOMMON 0 5E4 BC8 1 2
 maintext 0 6BB D76 2F 2
 cstackCOMMON 1 70 70 D 1
 reset_vec 0 0 0 3 2
-strings 0 3 6 36 2
+strings 0 3 6 45 2
 # %NOTES Section
 # This section contains data of all the note-psects.  The beginning of the section
 # is indicated by %NOTES. The first line indicates the name and decimal

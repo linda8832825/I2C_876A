@@ -7,7 +7,6 @@
 # 1 "C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
 # 1 "main.c" 2
-
 # 1 "C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\htc.h" 1 3
 
 
@@ -1548,10 +1547,10 @@ extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 28 "C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 2 3
 # 5 "C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\htc.h" 2 3
-# 2 "main.c" 2
+# 1 "main.c" 2
 
 # 1 "./I2C_LCD.h" 1
-# 27 "./I2C_LCD.h"
+# 28 "./I2C_LCD.h"
 void I2C_Master_Init();
 void I2C_Master_Wait();
 void I2C_Master_Start();
@@ -1574,7 +1573,7 @@ void noBacklight();
 void LCD_SR();
 void LCD_SL();
 void LCD_Clear();
-# 3 "main.c" 2
+# 2 "main.c" 2
 
 
 #pragma config FOSC = HS
@@ -1593,10 +1592,9 @@ void main(void) {
     }
   return;
 }
-void write(void)
-{
+void write(void){
     LCD_Set_Cursor(1, 1);
-    LCD_Write_String(" ปฏ");
+    LCD_Write_String(" iiiiiiiiiiiiiiiii");
     LCD_Set_Cursor(2, 1);
     LCD_Write_String(" 222222222222");
     LCD_Set_Cursor(3, 1);
@@ -1604,7 +1602,6 @@ void write(void)
     LCD_Set_Cursor(4, 1);
     LCD_Write_String(" :)))))))))))))))");
 }
-void Delay(unsigned int counter)
-{
+void Delay(unsigned int counter){
   while(counter>0) counter--;
 }

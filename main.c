@@ -1,4 +1,3 @@
-//#include <xc.h>
 #include <htc.h>
 #include "I2C_LCD.h"
 // CONFIG
@@ -18,10 +17,9 @@ void main(void) {
     }
   return;
 }
-void write(void)
-{
+void write(void){
     LCD_Set_Cursor(1, 1);
-    LCD_Write_String(" iiiiiiiiiiii");
+    LCD_Write_String(" iiiiiiiiiiiiiiiii");
     LCD_Set_Cursor(2, 1);
     LCD_Write_String(" 222222222222"); 
     LCD_Set_Cursor(3, 1);
@@ -29,7 +27,6 @@ void write(void)
     LCD_Set_Cursor(4, 1);
     LCD_Write_String(" :)))))))))))))))"); 
 }
-void Delay(unsigned int counter)
-{
+void Delay(unsigned int counter){
   while(counter>0) counter--;  
 }  

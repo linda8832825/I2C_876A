@@ -1562,7 +1562,7 @@ extern __bank0 __bit __timeout;
 # 1 "I2C_LCD.c" 2
 
 # 1 "./I2C_LCD.h" 1
-# 27 "./I2C_LCD.h"
+# 28 "./I2C_LCD.h"
 void I2C_Master_Init();
 void I2C_Master_Wait();
 void I2C_Master_Start();
@@ -1592,7 +1592,7 @@ unsigned char RS, i2c_add, BackLight_State = 0x08;
 
 void I2C_Master_Init()
 {
-  SSPCON = 0x28;
+  SSPCON = 0x38;
 
 
   SSPCON2 = 0x00;

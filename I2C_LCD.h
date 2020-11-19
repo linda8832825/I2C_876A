@@ -1,8 +1,9 @@
 /* File: I2C_LCD.h */
 #define _XTAL_FREQ            16000000
 #define I2C_BaudRate          100000
-#define SCL_D                 TRISC3
-#define SDA_D                 TRISC4
+#define SCL_D                 TRISC3  //智能scl
+#define SDA_D                 TRISC4  //智能sda
+#define RA0                   TRISA0  //智能 RA0(給0 LED亮) 
 #define LCD_BACKLIGHT         0x08
 #define LCD_NOBACKLIGHT       0x00
 #define LCD_FIRST_ROW         0x80

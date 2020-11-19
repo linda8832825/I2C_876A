@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files\Microchip\xc8\v2.20\pic\dat\en_msgs.txt -cn \
   -h+dist/default/production\I2C_876A.X.production.sym \
   --cmf=dist/default/production\I2C_876A.X.production.cmf -z -Q16F876A \
-  -oC:\Users\linda\AppData\Local\Temp\sdas.2 --defsym=__MPLAB_BUILD=1 \
+  -oC:\Users\linda\AppData\Local\Temp\sbdo.2 --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/I2C_876A.X.production.map -E1 -ver=XC8 Compiler \
   --acfsm=1493 -ASTACK=0110h-016Fh -pstack=STACK -ACODE=00h-07FFhx4 \
   -ASTRCODE=00h-01FFFh -ASTRING=00h-0FFhx32 -ACONST=00h-0FFhx32 \
@@ -18,7 +18,7 @@ Linker command line:
   -preset_vec=00h,intentry,init,end_init -ppowerup=CODE -pcinit=CODE \
   -pfunctab=ENTRY -AEEDATA=00h-0FFh/02100h -peeprom_data=EEDATA -DEEDATA=2 \
   -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 -k \
-  C:\Users\linda\AppData\Local\Temp\sdas.o \
+  C:\Users\linda\AppData\Local\Temp\sbdo.o \
   dist/default/production\I2C_876A.X.production.o 
 
 Object code version is 3.11
@@ -28,7 +28,7 @@ Machine type is 16F876A
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\linda\AppData\Local\Temp\sdas.o
+C:\Users\linda\AppData\Local\Temp\sbdo.o
                 end_init                              0        0        3        0       0
                 config                             2007     2007        1        0       4
 dist/default/production\I2C_876A.X.production.o
@@ -52,7 +52,7 @@ dist/default/production\I2C_876A.X.production.o
                 cstackCOMMON                         70       70        A       70       1
                 dataCOMMON                           7C       7C        1       70       1
                 bssCOMMON                            7B       7B        1       70       1
-                strings                               3        3       36        6       0
+                strings                               3        3       45        6       0
                 nvCOMMON                             7A       7A        1       70       1
                 idataCOMMON                         5E4      5E4        1      BC8       0
 
@@ -82,7 +82,7 @@ TOTAL           Name                               Link     Load   Length     Sp
         CLASS   STRCODE        
 
         CLASS   STRING         
-                strings                               3        3       36         0
+                strings                               3        3       45         0
 
         CLASS   CONST          
 
@@ -127,7 +127,7 @@ TOTAL           Name                               Link     Load   Length     Sp
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
 
                 reset_vec                      000000  000003  000003         0       0  CODE        2
-                strings                        000003  000036  000039         6       0  STRING      2
+                strings                        000003  000045  000048         6       0  STRING      2
                 cstackCOMMON                   000070  00000D  00007D        70       1  COMMON      1
                 idataCOMMON                    0005E4  000001  0005E5       BC8       0  CODE        2
                 text11                         0005E5  000009  0005EE       BCA       0  CODE        2
@@ -155,13 +155,13 @@ UNUSED ADDRESS RANGES
         BANK1            00A0-00EF             50           1
         BANK2            0110-016F             60           1
         BANK3            0190-01EF             60           1
-        CODE             0039-05E3            5AB           2
+        CODE             0048-05E3            59C           2
                          0800-1FFF            800
         COMMON           007D-007D              1           1
-        CONST            0039-05E3            100           2
+        CONST            0048-05E3            100           2
                          0800-1FFF            100
         EEDATA           2100-21FF            100           2
-        ENTRY            0039-05E3            100           2
+        ENTRY            0048-05E3            100           2
                          0800-1FFF            100
         IDLOC            2000-2003              4           2
         RAM              0020-006F             50           1
@@ -173,9 +173,9 @@ UNUSED ADDRESS RANGES
         SFR2             0100-010F             10           1
         SFR3             0180-018F             10           1
         STACK            0110-016F             60           1
-        STRCODE          0039-05E3            5AB           2
+        STRCODE          0048-05E3            59C           2
                          0800-1FFF           1800
-        STRING           0039-05E3            100           2
+        STRING           0048-05E3            100           2
                          0800-1FFF            100
 
                                   Symbol Table
@@ -381,7 +381,7 @@ FUNCTION INFORMATION:
 
  *************** function _main *****************
  Defined at:
-		line 8 in file "main.c"
+		line 7 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -413,7 +413,7 @@ Total ram usage:        0 bytes
 
  *************** function _write *****************
  Defined at:
-		line 21 in file "main.c"
+		line 20 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -447,10 +447,10 @@ Total ram usage:        0 bytes
 		line 119 in file "I2C_LCD.c"
  Parameters:    Size  Location     Type
   Str             1    wreg     PTR unsigned char 
-		 -> STR_4(18), STR_3(12), STR_2(14), STR_1(4), 
+		 -> STR_4(18), STR_3(12), STR_2(14), STR_1(19), 
  Auto vars:     Size  Location     Type
   Str             1    8[COMMON] PTR unsigned char 
-		 -> STR_4(18), STR_3(12), STR_2(14), STR_1(4), 
+		 -> STR_4(18), STR_3(12), STR_2(14), STR_1(19), 
   i               2    6[COMMON] int 
  Return value:  Size  Location     Type
                   1    wreg      void 
@@ -823,7 +823,7 @@ Total ram usage:        0 bytes
 
  *************** function _Delay *****************
  Defined at:
-		line 32 in file "main.c"
+		line 30 in file "main.c"
  Parameters:    Size  Location     Type
   counter         2    0[COMMON] unsigned int 
  Auto vars:     Size  Location     Type

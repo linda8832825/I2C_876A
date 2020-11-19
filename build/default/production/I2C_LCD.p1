@@ -44,15 +44,15 @@ Version 4.0 HI-TECH Software Intermediate Code
 "2494
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f876a.h: 2494: extern volatile __bit RCEN __attribute__((address(0x48B)));
 [v _RCEN `Vb ~T0 @X0 0 e@1163 ]
-"38 ./I2C_LCD.h
-[; ;./I2C_LCD.h: 38: void IO_Expander_Write(unsigned char Data);
+"39 ./I2C_LCD.h
+[; ;./I2C_LCD.h: 39: void IO_Expander_Write(unsigned char Data);
 [v _IO_Expander_Write `(v ~T0 @X0 0 ef1`uc ]
 [v F761 `(v ~T0 @X0 1 tf1`ul ]
 "92 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\pic.h
 [v __delay `JF761 ~T0 @X0 0 e ]
 [p i __delay ]
-"40 ./I2C_LCD.h
-[; ;./I2C_LCD.h: 40: void LCD_CMD(unsigned char CMD);
+"41 ./I2C_LCD.h
+[; ;./I2C_LCD.h: 41: void LCD_CMD(unsigned char CMD);
 [v _LCD_CMD `(v ~T0 @X0 0 ef1`uc ]
 "54 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f876a.h
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f876a.h: 54: __asm("INDF equ 00h");
@@ -239,8 +239,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U _I2C_Master_Init ]
 [f ]
 "8
-[; ;I2C_LCD.c: 8:   SSPCON = 0x28;
-[e = _SSPCON -> -> 40 `i `uc ]
+[; ;I2C_LCD.c: 8:   SSPCON = 0x38;
+[e = _SSPCON -> -> 56 `i `uc ]
 "11
 [; ;I2C_LCD.c: 11:   SSPCON2 = 0x00;
 [e = _SSPCON2 -> -> 0 `i `uc ]

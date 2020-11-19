@@ -3,26 +3,26 @@ Version 4.0 HI-TECH Software Intermediate Code
 "2659 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f876a.h
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f876a.h: 2659: extern volatile __bit TRISB0 __attribute__((address(0x430)));
 [v _TRISB0 `Vb ~T0 @X0 0 e@1072 ]
-"27 ./I2C_LCD.h
-[; ;./I2C_LCD.h: 27: void I2C_Master_Init();
+"28 ./I2C_LCD.h
+[; ;./I2C_LCD.h: 28: void I2C_Master_Init();
 [v _I2C_Master_Init `(v ~T0 @X0 0 e? ]
-"37
-[; ;./I2C_LCD.h: 37: void LCD_Init(unsigned char I2C_Add);
+"38
+[; ;./I2C_LCD.h: 38: void LCD_Init(unsigned char I2C_Add);
 [v _LCD_Init `(v ~T0 @X0 0 ef1`uc ]
-"7 main.c
-[; ;main.c: 7:         RB0=1;
+"6 main.c
+[; ;main.c: 6:     while(1){
 [v _write `(v ~T0 @X0 0 ef ]
 "2431 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f876a.h
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f876a.h: 2431: extern volatile __bit RB0 __attribute__((address(0x30)));
 [v _RB0 `Vb ~T0 @X0 0 e@48 ]
-"6 main.c
-[; ;main.c: 6:     while(1){
+"5 main.c
+[; ;main.c: 5:     write();
 [v _Delay `(v ~T0 @X0 0 ef1`ui ]
-"41 ./I2C_LCD.h
-[; ;./I2C_LCD.h: 41: void LCD_Set_Cursor(unsigned char ROW, unsigned char COL);
+"42 ./I2C_LCD.h
+[; ;./I2C_LCD.h: 42: void LCD_Set_Cursor(unsigned char ROW, unsigned char COL);
 [v _LCD_Set_Cursor `(v ~T0 @X0 0 ef2`uc`uc ]
-"43
-[; ;./I2C_LCD.h: 43: void LCD_Write_String(char*);
+"44
+[; ;./I2C_LCD.h: 44: void LCD_Write_String(char*);
 [v _LCD_Write_String `(v ~T0 @X0 0 ef1`*uc ]
 "54 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f876a.h
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f876a.h: 54: __asm("INDF equ 00h");
@@ -192,110 +192,105 @@ Version 4.0 HI-TECH Software Intermediate Code
 "2138
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f876a.h: 2138: __asm("EECON2 equ 018Dh");
 [; <" EECON2 equ 018Dh ;# ">
-"5 main.c
-[; ;main.c: 5:     write();
+"4 main.c
+[; ;main.c: 4:     LCD_Init(0x4E);
 [p x FOSC = HS ]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"8
-[; ;main.c: 8:         Delay(50000);
+"7
+[; ;main.c: 7:         RB0=1;
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
+"8
+[; ;main.c: 8:         Delay(50000);
+[e = _TRISB0 -> -> 0 `i `b ]
 "9
 [; ;main.c: 9:         RB0=0;
-[e = _TRISB0 -> -> 0 `i `b ]
+[e ( _I2C_Master_Init ..  ]
 "10
 [; ;main.c: 10:         Delay(50000);
-[e ( _I2C_Master_Init ..  ]
+[e ( _LCD_Init (1 -> -> 78 `i `uc ]
 "11
 [; ;main.c: 11:     }
-[e ( _LCD_Init (1 -> -> 78 `i `uc ]
+[e ( _write ..  ]
 "12
 [; ;main.c: 12:   return;
-[e ( _write ..  ]
-"13
-[; ;main.c: 13: }
 [e :U 89 ]
 {
-"14
-[; ;main.c: 14: void write(void)
+"13
+[; ;main.c: 13: }
 [e = _RB0 -> -> 1 `i `b ]
+"14
+[; ;main.c: 14: void write(void){
+[e ( _Delay (1 -> -> 50000 `l `ui ]
 "15
-[; ;main.c: 15: {
-[e ( _Delay (1 -> -> 50000 `l `ui ]
-"16
-[; ;main.c: 16:     LCD_Set_Cursor(1, 1);
+[; ;main.c: 15:     LCD_Set_Cursor(1, 1);
 [e = _RB0 -> -> 0 `i `b ]
-"17
-[; ;main.c: 17:     LCD_Write_String(" ปฏ");
+"16
+[; ;main.c: 16:     LCD_Write_String(" iiiiiiiiiiiiiiiii");
 [e ( _Delay (1 -> -> 50000 `l `ui ]
-"18
-[; ;main.c: 18:     LCD_Set_Cursor(2, 1);
+"17
+[; ;main.c: 17:     LCD_Set_Cursor(2, 1);
 }
 [e :U 88 ]
 [e $U 89  ]
 [e :U 90 ]
-"19
-[; ;main.c: 19:     LCD_Write_String(" 222222222222");
+"18
+[; ;main.c: 18:     LCD_Write_String(" 222222222222");
 [e $UE 87  ]
-"20
-[; ;main.c: 20:     LCD_Set_Cursor(3, 1);
+"19
+[; ;main.c: 19:     LCD_Set_Cursor(3, 1);
 [e :UE 87 ]
 }
-"21
-[; ;main.c: 21:     LCD_Write_String(" cccccccccc");
+"20
+[; ;main.c: 20:     LCD_Write_String(" cccccccccc");
 [v _write `(v ~T0 @X0 1 ef ]
-"22
-[; ;main.c: 22:     LCD_Set_Cursor(4, 1);
 {
 [e :U _write ]
 [f ]
-"23
-[; ;main.c: 23:     LCD_Write_String(" :)))))))))))))))");
+"21
+[; ;main.c: 21:     LCD_Set_Cursor(4, 1);
 [e ( _LCD_Set_Cursor (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
-"24
-[; ;main.c: 24: }
+"22
+[; ;main.c: 22:     LCD_Write_String(" :)))))))))))))))");
 [e ( _LCD_Write_String (1 :s 1C ]
-"25
-[; ;main.c: 25: void Delay(unsigned int counter)
+"23
+[; ;main.c: 23: }
 [e ( _LCD_Set_Cursor (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
-"26
-[; ;main.c: 26: {
+"24
+[; ;main.c: 24: void Delay(unsigned int counter){
 [e ( _LCD_Write_String (1 :s 2C ]
-"27
-[; ;main.c: 27:   while(counter>0) counter--;
+"25
+[; ;main.c: 25:   while(counter>0) counter--;
 [e ( _LCD_Set_Cursor (2 , -> -> 3 `i `uc -> -> 1 `i `uc ]
-"28
-[; ;main.c: 28: }
+"26
+[; ;main.c: 26: }
 [e ( _LCD_Write_String (1 :s 3C ]
-"29
+"27
 [e ( _LCD_Set_Cursor (2 , -> -> 4 `i `uc -> -> 1 `i `uc ]
-"30
+"28
 [e ( _LCD_Write_String (1 :s 4C ]
-"31
+"29
 [e :UE 91 ]
 }
-"32
+"30
 [v _Delay `(v ~T0 @X0 1 ef1`ui ]
-"33
 {
 [e :U _Delay ]
-"32
 [v _counter `ui ~T0 @X0 1 r1 ]
-"33
 [f ]
-"34
+"31
 [e $U 93  ]
 [e :U 94 ]
 [e -- _counter -> -> 1 `i `ui ]
 [e :U 93 ]
 [e $ > _counter -> -> 0 `i `ui 94  ]
 [e :U 95 ]
-"35
+"32
 [e :UE 92 ]
 }
+[a 1C 32 105 105 105 105 105 105 105 105 105 105 105 105 105 105 105 105 105 0 ]
 [a 3C 32 99 99 99 99 99 99 99 99 99 99 0 ]
 [a 2C 32 50 50 50 50 50 50 50 50 50 50 50 50 0 ]
 [a 4C 32 58 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 0 ]
-[a 1C 32 18446744073709551547 18446744073709551535 0 ]
